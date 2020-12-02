@@ -73,7 +73,6 @@ namespace SimpleATM
             DepositEvent();
         }   
 
-        
         private void ActivateBtn()
         {
             Btn1.Enabled = true;
@@ -119,7 +118,6 @@ namespace SimpleATM
             TxtUI.Text = "Enter amount: ";
             Deposit();
         }
-
 
         private void Btn1_Click(object sender, EventArgs e)
         {
