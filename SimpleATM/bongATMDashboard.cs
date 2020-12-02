@@ -13,7 +13,6 @@ namespace SimpleATM
         }
 
         double amount, withdrawAmount, depositAmount;
-
         public string Balance() => "Your current balance is Php " + amount + ". ";
         public double Withdraw() => amount -= withdrawAmount;
         public double Deposit() => amount += depositAmount;
@@ -73,7 +72,6 @@ namespace SimpleATM
             DepositEvent();
         }   
 
-        
         private void ActivateBtn()
         {
             Btn1.Enabled = true;
@@ -119,7 +117,6 @@ namespace SimpleATM
             TxtUI.Text = "Enter amount: ";
             Deposit();
         }
-
 
         private void Btn1_Click(object sender, EventArgs e)
         {
