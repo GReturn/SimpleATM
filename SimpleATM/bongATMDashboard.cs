@@ -13,7 +13,6 @@ namespace SimpleATM
         }
 
         double amount, withdrawAmount, depositAmount;
-
         public string Balance() => "Your current balance is Php " + amount + ". ";
         public double Withdraw() => amount -= withdrawAmount;
         public double Deposit() => amount += depositAmount;
