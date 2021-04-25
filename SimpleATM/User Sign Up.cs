@@ -7,10 +7,9 @@ namespace SimpleATM
     public partial class User_Sign_Up : Form
     {
 
-        //Things needed:
-        //RNG for PIN codes
-        //SQL Connection - connection string
-        //SQL Command Query
+        // Things needed:
+        // SQL Connection - connection string
+        // SQL Command Query
 
         public User_Sign_Up()
         {
@@ -26,7 +25,7 @@ namespace SimpleATM
             TxtNewPIN.Text = Convert.ToString(newPIN);
         }
 
-        SqlConnection dataConn = new SqlConnection("Data Source=Localhost; Database=Bong ATM; Integrated Security=True");
+        SqlConnection dataConn = new SqlConnection("Data Source=INSERT_SRC; Database=INSERT_DB; Integrated Security=True");
         
         // GENERATE NEW USER ID
         private void BtnNewID_Click(object sender, EventArgs e)
