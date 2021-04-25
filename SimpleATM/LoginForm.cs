@@ -13,12 +13,13 @@ namespace SimpleATM
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            //Things needed:
-            //1. SqlConnection
-            //2. SqlCommand
-            //3. SqlDataReader
+            // Things needed:
+            // 1. SqlConnection
+            // 2. SqlCommand
+            // 3. SqlDataReader
 
-            SqlConnection databaseConn = new SqlConnection("Data Source=Localhost; Database=Bong ATM; Integrated Security=True");
+            // Change values of Data Source and Database.
+            SqlConnection databaseConn = new SqlConnection("Data Source=INSERT_SRC; Database=INSERT_DB; Integrated Security=True");
             
             databaseConn.Open();
             SqlCommand databaseCmd = new SqlCommand("select * from Users where Username='" + txtUsername.Text + "' and PIN='" + txtPIN.Text + "'", databaseConn);
@@ -28,7 +29,7 @@ namespace SimpleATM
             if (databaseRead.Read())
             {
                 bongATMDashboard bongATM = new bongATMDashboard();
-                bongATM.Show(); //this.Hide();
+                bongATM.Show();
             }
             else
             {
@@ -42,7 +43,7 @@ namespace SimpleATM
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             User_Sign_Up userSignUp = new User_Sign_Up();
-            userSignUp.Show(); //this.Hide();
+            userSignUp.Show();
         }
     }
 }
