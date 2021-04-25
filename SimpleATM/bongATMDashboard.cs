@@ -71,7 +71,7 @@ namespace SimpleATM
             depositAmount = GrabInput();
             DepositEvent();
         }   
-
+        #region Buttons
         private void ActivateBtn()
         {
             Btn1.Enabled = true;
@@ -104,7 +104,8 @@ namespace SimpleATM
             btnBack.Enabled = false;
             btnClear.Enabled = false;
         }
-
+        #endregion
+        
         public void WithdrawEvent()
         {             
             TxtDisplay.Text = "You have successfully withdrawn Php " + withdrawAmount + ". ";
@@ -117,7 +118,8 @@ namespace SimpleATM
             TxtUI.Text = "Enter amount: ";
             Deposit();
         }
-
+        
+        #region Button click events
         private void Btn1_Click(object sender, EventArgs e)
         {
             if (TxtUI.Text != null)
@@ -210,5 +212,6 @@ namespace SimpleATM
         {
             TxtUI.Text = "Enter amount: ";
         }
+        #endregion
     }
 }
