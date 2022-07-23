@@ -5,5 +5,5 @@ Simple ATM grasps the basic concept and mechanism of most modern-day ATMs. It is
 
 That's all. lmao.
 
-Update / Additional Info:
+### Update / Additional Info:
 It's buggy.
