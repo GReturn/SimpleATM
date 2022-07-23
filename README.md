@@ -4,3 +4,6 @@ Also called Bong ATM. A run-of-the-mill project by Lindrew (G Return) to help hi
 Simple ATM grasps the basic concept and mechanism of most modern-day ATMs. It is capable of accepting withdrawals, deposits, and the checking of the clients' amount in their account via WinForms.
 
 That's all. lmao.
+
+Update / Additional Info:
+It's buggy.
